@@ -35,13 +35,7 @@ export default function () {
            name: "Promise VTrack",
            desc: "Promise VTrack is a Storage subsystem",
            responsibility: "I was worked in Promise USA to support Firmware development since 2013/6~2013/9, I am in charge of the raid core development. Implement OfflineLD feature"
-         }, 
-         {
-           id: 2,
-           name: "",
-           desc: "",
-           responsibility: ""
-         }
+         } 
        ]
      },
      {
@@ -51,16 +45,10 @@ export default function () {
        project: [
          {
            id: 1,
-           name: "This is one comment",
-           desc: "",
-           responsibility: ""
-         }, 
-         {
-           id: 2,
-           name: "This is one comment",
-           desc: "",
-           responsibility: ""
-         }
+           name: "Cloud Middleware",
+           desc: "Softlayer and Cloud Management Service(IaaS)",
+           responsibility: "arge Scale Cloud Computing Architecture planning, provision and middleware setting. Using Softlayer API implement internal utility"
+         } 
        ]
      },
      {
@@ -70,17 +58,10 @@ export default function () {
        project: [
           {
            id: 1,
-           name: "This is one comment",
-           desc: "",
-           responsibility: ""
-         }, 
-         {
-           id: 2,
-           name: "This is one comment",
-           desc: "",
-           responsibility: ""
-         }
-
+           name: "Tcp Proxy",
+           desc: "Nexusguard is a DDos protection service provider",
+           responsibility: "Product platform build and integration the service. Tcp Proxy portal implement"
+         } 
        ] 
      },
      {
