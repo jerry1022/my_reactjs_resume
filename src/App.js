@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Profile from './components/Profile';
 import Education from './components/Education';
+import Skill from './components/Skill';
 import Experience from './components/Experience';
 import Project from './components/Project';
 import ProjectDetail from './components/ProjectDetail';
@@ -21,6 +22,8 @@ class App extends Component {
         <Profile />
         <hr />
         <Education />
+        <Skill />
+        <hr />
         <Experience />
         <hr />
         <Project />
