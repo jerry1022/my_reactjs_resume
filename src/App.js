@@ -19,6 +19,7 @@ class App extends Component {
         <Profile />
         <hr />
         <Education />
+        <hr />
         <Skill />
         <hr />
         <Experience />
