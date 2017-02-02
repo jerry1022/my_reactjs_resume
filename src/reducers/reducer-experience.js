@@ -4,6 +4,8 @@ export default function () {
        id: 1,
        company: "TrendMicro", 
        icon: "images/trendmicro.png", 
+       title: "Cloud Software Engineer",
+       period: "2010/04~2013/02",
        project: [
          {
            id: 1,
@@ -29,6 +31,8 @@ export default function () {
        id: 2,
        company: "Promise", 
        icon: "images/promise.png", 
+       title: "Firmware Engineer",
+       period: "2013/03~2014/03",
        project: [
          {
            id: 1,
@@ -42,6 +46,8 @@ export default function () {
        id: 3,
        company: "IBM", 
        icon: "images/ibm.png", 
+       title: "Advisory IT Specialist",
+       period: "2014/03~2015/04",
        project: [
          {
            id: 1,
@@ -55,6 +61,8 @@ export default function () {
        id: 4,
        company: "Nexusguard",
        icon: "images/nexusguard.png", 
+       title: "Technical Specialist",
+       period: "2015/04~2015/10",
        project: [
           {
            id: 1,
@@ -68,6 +76,8 @@ export default function () {
        id: 5,
        company: "picowork",
        icon: "images/picowork.png", 
+       title: "Sr. Software Engineer",
+       period: "2015/12~2017/02",
        project: [
           {
            id: 1,

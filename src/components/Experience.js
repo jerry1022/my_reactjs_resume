@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {bindActionCreators } from 'redux';
 import {connect} from 'react-redux';
+import {Grid, Row, Col, Thumbnail} from 'react-bootstrap';
 import {selectCompany} from '../actions/action-company';
 
 
@@ -8,14 +9,13 @@ class Experience extends Component {
   experienceList() {
 	return this.props.experiences.map((experience) => { 
             return(
-            <div>
-	      <img src={experience.icon} onClick={()=>this.props.selectCompany(experience)}/>
-              <h2 onClick={()=>this.props.selectCompany(experience)} 
-                  key={experience.id} 
-              >
-                  Company: {experience.company}
-              </h2>
-            </div>
+               <Col xs={6} md={4}>
+      	         <Thumbnail src={experience.icon} alt="242x200" onClick={()=>this.props.selectCompany(experience)}>
+                     <h3>{experience.company}</h3>
+                     <p>{experience.title} {experience.period}</p>
+                     <p>More...</p>
+                 </Thumbnail>
+               </Col>
             );
           })
   }
@@ -23,8 +23,12 @@ class Experience extends Component {
   render() {
     return (
       <div>
-          <h1>Experiences</h1>
-          {this.experienceList()}
+          <h1>Working Experiences</h1>
+          <Grid>
+            <Row>
+              {this.experienceList()}
+            </Row>
+          </Grid>
       </div>
     );
   }

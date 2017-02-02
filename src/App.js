@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Image} from 'react-bootstrap';
 import Profile from './components/Profile';
 import Education from './components/Education';
 import Skill from './components/Skill';
@@ -14,7 +15,7 @@ class App extends Component {
       <div>
         <div className="App">
           <div className="App-header">
-            <img src='images/face.png' className="App-logo" alt="logo" />
+            <Image src='images/face.png' className="App-logo" alt="logo" circle />
             <h2>Welcome to Jerry Resume</h2>
           </div>
         </div>
