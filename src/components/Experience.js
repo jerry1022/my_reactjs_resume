@@ -42,7 +42,7 @@ function mapStateToProps(state) {
 
 function matchDispatchToProps(dispatch) {
   return bindActionCreators({
-      selectCompany: selectCompany
+      selectCompany: selectCompany,
     }, dispatch); 
 }
 export default connect(mapStateToProps, matchDispatchToProps)(Experience);

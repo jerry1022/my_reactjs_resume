@@ -5,3 +5,13 @@ export const selectCompany = (company) => {
     payload: company
   }
 } 
+
+export const closeCompanyProjects = () => {
+  return {
+    type: "CLOSE_COMPANY_PROJECTS",
+    payload: {
+       project: [],
+       showComapy: false
+    }
+  }
+}

@@ -5,7 +5,6 @@ import Education from './components/Education';
 import Skill from './components/Skill';
 import Experience from './components/Experience';
 import Project from './components/Project';
-import ProjectDetail from './components/ProjectDetail';
 import logo from './logo.svg';
 import './App.css';
 
@@ -27,7 +26,6 @@ class App extends Component {
         <Experience />
         <Project />
         <hr />
-        <ProjectDetail />
       </div>
     );
   }
