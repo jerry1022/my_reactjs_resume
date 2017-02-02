@@ -1,7 +1,8 @@
 # my_reactjs_resume
-npm install
-run => npm start 
+1. npm install
+
+2. run => npm start 
  
-opne browser localhost:3000
+3. opne browser localhost:3000
 
 read my cv and contact me 
