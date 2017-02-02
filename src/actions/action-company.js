@@ -10,7 +10,7 @@ export const closeCompanyProjects = () => {
   return {
     type: "CLOSE_COMPANY_PROJECTS",
     payload: {
-       project: [],
+       project: [], 
        showComapy: false
     }
   }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {bindActionCreators } from 'redux';
 import {connect} from 'react-redux';
-import {Grid, Row, Col, Thumbnail} from 'react-bootstrap';
+import {Button, Grid, Row, Col, Thumbnail} from 'react-bootstrap';
 import {selectCompany} from '../actions/action-company';
 
 
@@ -13,7 +13,7 @@ class Experience extends Component {
       	         <Thumbnail src={experience.icon} alt="242x200" onClick={()=>this.props.selectCompany(experience)}>
                      <h3>{experience.company}</h3>
                      <p>{experience.title} {experience.period}</p>
-                     <p>More...</p>
+                     <Button bsStyle='info'>More...</Button>
                  </Thumbnail>
                </Col>
             );

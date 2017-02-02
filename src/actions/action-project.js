@@ -5,3 +5,9 @@ export const listProject = (project) => {
     payload: project
   }
 } 
+
+export const restProject = () => {
+  return {
+    type: "REST_PROJECT"
+  }
+}

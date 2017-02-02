@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 
 
 class ProjectDetail extends Component {
+
   render() {
     if (this.props.project === null) {
       return <h2>Select Project please ... </h2>

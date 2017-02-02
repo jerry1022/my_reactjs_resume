@@ -3,7 +3,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Button, Modal} from 'react-bootstrap';
 import {closeCompanyProjects} from '../actions/action-company';
-import {listProject} from '../actions/action-project';
+import {listProject, restProject} from '../actions/action-project';
 import ProjectDetail from './ProjectDetail';
 
 class Project extends Component {
@@ -28,7 +28,9 @@ class Project extends Component {
     if (this.props.experience !== null) {
         companyName = this.props.experience.company;
         showProjects = this.props.experience.showProjects;
+        this.props.restProject();
     }
+    
     return (
       <div>
       <Modal show={showProjects} bsSize="large" aria-labelledby="contained-modal-title-lg" onHide={()=>this.props.closeCompanyProjects()}>
@@ -58,7 +60,8 @@ function mapStateToProps(state) {
 function matchDispatchToProps(dispatch) {
   return bindActionCreators({
     closeCompanyProjects: closeCompanyProjects,
-    listProject: listProject
+    listProject: listProject,
+    restProject: restProject
     }, dispatch);
 } 
 

@@ -7,26 +7,26 @@ class Profile extends Component {
     return (
       <Grid>
         <Row className='show-grid'>
-            <Col xs={2} md={2} lg={2}>
+            <Col xs={3} md={3} lg={2}>
 		<h2>Name:</h2>
             </Col>
-            <Col xs={1} md={1} lg={1}>
+            <Col xs={7} md={4} lg={2}>
                 <h2>{this.props.profile.name}</h2>
             </Col>
         </Row>
         <Row>
-            <Col xs={2} md={2} lg={2}>
+            <Col xs={3} md={3} lg={2}>
 		<h2>Birth:</h2>
             </Col>
-            <Col xs={1} md={1} lg={1}>
+            <Col xs={7} md={4} lg={1}>
                 <h2>{this.props.profile.birthday}</h2>
             </Col>
         </Row>
         <Row>
-            <Col xs={2} md={2} lg={2}>
+            <Col xs={4} md={2} lg={2}>
 		<h2>Gender:</h2>
             </Col>
-            <Col xs={1} md={1} lg={1}>
+            <Col xs={8} md={1} lg={1}>
                 <h2>{this.props.profile.gender}</h2>
             </Col>
         </Row>
@@ -39,18 +39,18 @@ class Profile extends Component {
             </Col>
         </Row>
         <Row>
-            <Col xs={2} md={2} lg={2}>
+            <Col xs={3} md={2} lg={2}>
 		<h2>Email:</h2>
             </Col>
-            <Col xs={1} md={1} lg={1}>
+            <Col xs={7} md={1} lg={1}>
                 <h2>{this.props.profile.email}</h2>
             </Col>
         </Row>
         <Row>
-            <Col xs={2} md={2} lg={2}>
+            <Col xs={3} md={2} lg={2}>
 		<h2>Skype:</h2>
             </Col>
-            <Col xs={1} md={1} lg={1}>
+            <Col xs={7} md={1} lg={1}>
                 <h2>{this.props.profile.skype}</h2>
             </Col>
         </Row>

@@ -9,7 +9,7 @@ class Education extends Component {
           <div>
             <Grid>
                <Row>
-	           <Col xs={2} md={2} lg={2}>
+	           <Col xs={4} md={2} lg={2}>
 	    		<h2>School:</h2>
                    </Col>
                    <Col xs={10} md={6} lg={6}>
@@ -17,7 +17,7 @@ class Education extends Component {
                    </Col>
                </Row>
 	       <Row>
-	           <Col xs={2} md={2} lg={2}>
+	           <Col xs={4} md={2} lg={2}>
 	    		<h2>Major:</h2>
                    </Col>
                    <Col xs={10} md={6} lg={6}>
@@ -25,7 +25,7 @@ class Education extends Component {
                    </Col>
                </Row>
  	       <Row>
-	           <Col xs={2} md={2} lg={2}>
+	           <Col xs={4} md={2} lg={2}>
 	    		<h2>Period:</h2>
                    </Col>
                    <Col xs={10} md={6} lg={6}>
@@ -33,7 +33,7 @@ class Education extends Component {
                    </Col>
                </Row>
                <Row>
-	           <Col xs={2} md={2} lg={2}>
+	           <Col xs={4} md={2} lg={2}>
 	    		<h2>Link:</h2>
                    </Col>
                    <Col xs={10} md={6} lg={6}>
