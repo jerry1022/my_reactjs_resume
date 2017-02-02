@@ -6,13 +6,13 @@ class Education extends Component {
   listSchool() {
      return this.props.educations.map((education) => {
        return (
-            <div>
-            <Grid className='show-grid'>
+          <div>
+            <Grid>
                <Row>
 	           <Col xs={2} md={2} lg={2}>
 	    		<h2>School:</h2>
                    </Col>
-                   <Col xsHidden md={6} lg={6}>
+                   <Col xs={10} md={6} lg={6}>
                         <h2>{education.school}</h2>
                    </Col>
                </Row>
@@ -20,7 +20,7 @@ class Education extends Component {
 	           <Col xs={2} md={2} lg={2}>
 	    		<h2>Major:</h2>
                    </Col>
-                   <Col xsHidden md={6} lg={6}>
+                   <Col xs={10} md={6} lg={6}>
                         <h2>{education.major}</h2>
                    </Col>
                </Row>
@@ -28,7 +28,7 @@ class Education extends Component {
 	           <Col xs={2} md={2} lg={2}>
 	    		<h2>Period:</h2>
                    </Col>
-                   <Col xsHidden md={6} lg={6}>
+                   <Col xs={10} md={6} lg={6}>
                         <h2>{education.period}</h2>
                    </Col>
                </Row>
@@ -36,12 +36,13 @@ class Education extends Component {
 	           <Col xs={2} md={2} lg={2}>
 	    		<h2>Link:</h2>
                    </Col>
-                   <Col xsHidden md={6} lg={6}>
+                   <Col xs={10} md={6} lg={6}>
                         <a href={education.link}><h2>{education.link}</h2></a>
                    </Col>
                </Row>
             </Grid>
-            </div>
+            <hr/>
+          </div>
        );
      });
   }
@@ -49,6 +50,7 @@ class Education extends Component {
   render() {
     return (
       <div> 
+        <h1>Educations</h1>
         {this.listSchool()} 
       </div>
     );
