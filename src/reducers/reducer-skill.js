@@ -1,7 +1,6 @@
 export default function () {
   return ( 
     {
-       id: 1,
        program: [ 
          {
           name: 'python',
@@ -16,7 +15,11 @@ export default function () {
           level: 3
          },
          {
-          name: 'NodeJS',
+          name: 'nodejs',
+          level: 4,
+         },
+         {
+          name: 'javascript',
           level: 4,
          },
          {
@@ -62,6 +65,25 @@ export default function () {
          {
           name: 'DB2',
           level: 3
+         }
+
+      ],
+       web: [
+         {
+          name: 'Semantic Web',
+          level: 5
+         },
+         {
+          name: 'React',
+          level: 3
+         },
+         {
+          name: 'Redux',
+          level: 3
+         },
+         {
+          name: 'JSON',
+          level: 5
          }
 
       ]

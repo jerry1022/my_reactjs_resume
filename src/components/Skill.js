@@ -40,7 +40,11 @@ class Skill extends Component {
         return (<Button bsStyle={this.level(db.level)}> {db.name}</Button>);
      });
   }
-
+  web() {
+       return this.props.skills.web.map((web)=>{
+        return (<Button bsStyle={this.level(web.level)}> {web.name}</Button>);
+     });
+  }
   render() {
     return (
       <div>
@@ -60,7 +64,12 @@ class Skill extends Component {
             {this.db()}
             </ButtonToolbar>
         </h2>
-      </div>
+      	<h2>Web: <br />
+            <ButtonToolbar>
+            {this.web()}
+            </ButtonToolbar>
+        </h2>
+</div>
     );
   }
 }
