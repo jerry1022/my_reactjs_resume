@@ -1,48 +1,19 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import {Grid, Row, Col} from 'react-bootstrap';
+import {Grid, Row, Col, Thumbnail} from 'react-bootstrap';
 
 class Education extends Component {
   listSchool() {
      return this.props.educations.map((education) => {
        return (
-          <div>
-            <Grid>
-               <Row>
-	           <Col xs={4} md={2} lg={2}>
-	    		<h2>School:</h2>
-                   </Col>
-                   <Col xs={10} md={6} lg={6}>
-                        <h2>{education.school}</h2>
-                   </Col>
-               </Row>
-	       <Row>
-	           <Col xs={4} md={2} lg={2}>
-	    		<h2>Major:</h2>
-                   </Col>
-                   <Col xs={10} md={6} lg={6}>
-                        <h2>{education.major}</h2>
-                   </Col>
-               </Row>
- 	       <Row>
-	           <Col xs={4} md={2} lg={2}>
-	    		<h2>Period:</h2>
-                   </Col>
-                   <Col xs={10} md={6} lg={6}>
-                        <h2>{education.period}</h2>
-                   </Col>
-               </Row>
-               <Row>
-	           <Col xs={4} md={2} lg={2}>
-	    		<h2>Link:</h2>
-                   </Col>
-                   <Col xs={10} md={6} lg={6}>
-                        <a href={education.link}><h2>{education.link}</h2></a>
-                   </Col>
-               </Row>
-            </Grid>
-            <hr/>
-          </div>
+               <Col xs={6} md={4}>
+                 <Thumbnail src={education.icon} alt={education.school}>
+                     <h3>{education.school}</h3>
+                     <p>{education.major}</p>
+                     <p>{education.period}</p>
+                     <p><a href={education.link}>{education.link}</a></p>
+                 </Thumbnail>
+               </Col>
        );
      });
   }
@@ -51,7 +22,11 @@ class Education extends Component {
     return (
       <div> 
         <h1>Educations</h1>
+        <Grid>
+          <Row>
         {this.listSchool()} 
+          </Row>
+        </Grid>
       </div>
     );
   }

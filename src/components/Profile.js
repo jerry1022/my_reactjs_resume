@@ -4,6 +4,7 @@ import {Grid, Row, Col} from 'react-bootstrap';
 
 class Profile extends Component {
   render() {
+    var skypeContact = 'skype:'+ this.props.profile.skype + '?call';
     return (
       <Grid>
         <Row className='show-grid'>
@@ -51,7 +52,7 @@ class Profile extends Component {
 		<h2>Skype:</h2>
             </Col>
             <Col xs={7} md={1} lg={1}>
-                <h2>{this.props.profile.skype}</h2>
+                <h2><a href={skypeContact}>{this.props.profile.skype}</a></h2>
             </Col>
         </Row>
       </Grid>
