@@ -13,7 +13,7 @@ class Experience extends Component {
       	         <Thumbnail src={experience.icon} alt="242x200" onClick={()=>this.props.selectCompany(experience)}>
                      <h3>{experience.company}</h3>
                      <p>{experience.title} {experience.period}</p>
-                     <Button bsStyle='info'>More...</Button>
+                     <Button bsStyle='info'>Detail...</Button>
                  </Thumbnail>
                </Col>
             );

@@ -11,19 +11,22 @@ export default function () {
            id: 1,
            name: "TCloud Project",
            desc: "Tcloud Lego Team provide the cloud computing IaaS service, It is the infrastructure of cloud",
-           responsibility: "Integrate all the modules: Communicate with each module teams, web portal front/backend modules integrate and Implement Restful API log system: system design, implementation, and push server implementation."
+           responsibility: "Integrate all the modules: Communicate with each module teams, web portal front/backend modules integrate and Implement Restful API log system: system design, implementation, and push server implementation.",
+           skills: ['python', 'Django', 'javascript', 'cloud computing']
          }, 
          {
            id: 2,
            name: "Safesync S3 Project",
            desc: " Safesync S3 project is the project which clonei the amazon simple storage service, that provide the cloud storage service like aws s3.( http://hicloud.hinet.net/index_en.html)",
-           responsibility: "Restful API implement and Policy function implement"
+           responsibility: "Restful API implement and Policy function implement",
+           skills: ['java', 'spring', 'MySQL', 'cloud computing']
          },
          {
            id: 3,
            name: "Safeync XSP",
            desc: "Safesync xsp is the dropbox like service and customize the product for ISP",
-           responsibility: "modify the web for customer and help them fix bugs"
+           responsibility: "modify the web for customer and help them fix bugs",
+           skills: ['python', 'javascript', 'cloud computing']
          }
        ]
      },
@@ -38,7 +41,8 @@ export default function () {
            id: 1,
            name: "Promise VTrack",
            desc: "Promise VTrack is a Storage subsystem",
-           responsibility: "I was worked in Promise USA to support Firmware development since 2013/6~2013/9, I am in charge of the raid core development. Implement OfflineLD feature"
+           responsibility: "I was worked in Promise USA to support Firmware development since 2013/6~2013/9, I am in charge of the raid core development. Implement OfflineLD feature",
+           skills: ['c', 'RAID']
          } 
        ]
      },
@@ -53,7 +57,8 @@ export default function () {
            id: 1,
            name: "Cloud Middleware",
            desc: "Softlayer and Cloud Management Service(IaaS)",
-           responsibility: "arge Scale Cloud Computing Architecture planning, provision and middleware setting. Using Softlayer API implement internal utility"
+           responsibility: "arge Scale Cloud Computing Architecture planning, provision and middleware setting. Using Softlayer API implement internal utility",
+           skills: ['java', 'python', 'cloud computing', 'softlayer']
          } 
        ]
      },
@@ -68,7 +73,8 @@ export default function () {
            id: 1,
            name: "Tcp Proxy",
            desc: "Nexusguard is a DDos protection service provider",
-           responsibility: "Product platform build and integration the service. Tcp Proxy portal implement"
+           responsibility: "Product platform build and integration the service. Tcp Proxy portal implement",
+           skills: ['GO', 'Nginx', 'GCP', 'SSDB']
          } 
        ] 
      },
@@ -83,13 +89,15 @@ export default function () {
            id: 1,
            name: "picowork",
            desc: "Picowork is a web base cloud social network and cloud cooperation system (www.picowork.com)",
-           responsibility: "Picowork Backend API and services, backend plan/implement(node.js, mongodb, redis)"
+           responsibility: "Picowork Backend API and services, backend plan/implement",
+           skills: ['NodeJs', 'mongodb', 'redis']
          }, 
          {
            id: 2,
            name: "node pushserver",
            desc: "Let user can subscirbe the push notification and  get push notification from apns or firebase",
-           responsibility: "Implement and log collection(ELK, node.js)"
+           responsibility: "Implement and log collection(ELK, node.js)",
+           skills: ['nodejs', 'elastic', 'fluent', 'node-push', 'apns', 'gcm']
          }
        ] 
      }
