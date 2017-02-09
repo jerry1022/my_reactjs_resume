@@ -100,6 +100,23 @@ export default function () {
            skills: ['nodejs', 'elastic', 'fluent', 'node-push', 'apns', 'gcm']
          }
        ] 
+     },
+     {
+       id: 6,
+       company: "LineBot",
+       icon: "images/searchMovie.png", 
+       title: "profolio",
+       period: "2017/02~2017/02",
+       project: [
+          {
+           id: 1,
+           name: "search movie time of Taiwan",
+           desc: "This is the line bot which search movie time of Taiwan",
+           responsibility: "Design, plan and Implement",
+           skills: ['NodeJs', 'mongodb', 'heroku', 'lineBot', 'restAPI']
+         } 
+       ] 
      }
+
   ]
 }

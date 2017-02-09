@@ -84,8 +84,11 @@ export default function () {
          {
           name: 'JSON',
           level: 5
+         },
+         {
+          name: 'Restful',
+          level: 5
          }
-
       ]
     }
   );
