@@ -1,16 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {createStore} from 'redux';
 import {Provider} from 'react-redux';
-import allReducers from './reducers';
-import App from './App';
+import { Router, browserHistory, IndexRoute } from 'react-router';
+import Root from './containers/Root';
+import Skill from './components/Skill';
 import './index.css';
 
-const store = createStore(allReducers);
+const routeConfig = [
+  { path: '/',
+    component: Root,
+    IndexRoute: {component: Root},
+    childRoutes: [
+      {path: 'skill', component: Skill },
+      {path: '', component: Root },
+      {path: '', component: Root },
+      {path: '', component: Root }
+    ]
+  }
+]
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <Router history={browserHistory} routes={routeConfig}/>,
   document.getElementById('root')
 );

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {Image} from 'react-bootstrap';
-import Profile from './components/Profile';
-import Education from './components/Education';
-import Skill from './components/Skill';
-import Experience from './components/Experience';
-import Project from './components/Project';
-import logo from './logo.svg';
-import './App.css';
+import Profile from '../components/Profile';
+import Education from '../components/Education';
+import Skill from '../components/Skill';
+import Experience from '../components/Experience';
+import Project from '../components/Project';
+import logo from '../logo.svg';
+import '../App.css';
 
 class App extends Component {
   render() {
@@ -27,7 +27,7 @@ class App extends Component {
         <Project />
         <hr />
       </div>
-    );
+    )
   }
 }
 

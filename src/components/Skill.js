@@ -69,7 +69,7 @@ class Skill extends Component {
             {this.web()}
             </ButtonToolbar>
         </h2>
-</div>
+      </div>
     );
   }
 }
